@@ -30,12 +30,12 @@ int main()
         return 1;
     }
 
-    int sackTotal = {0};
-    int badgeTotal = {0};
+    int sackTotal{0};
+    int badgeTotal{0};
     std::vector<int> first(52);
     std::vector<int> second(52);
     std::vector<std::vector<int>> groups(3, std::vector<int>(52));
-    int groupParity = {0};
+    int groupParity{0};
     for (std::string line; std::getline(input, line);)
     {
         int lineLength = line.length();
